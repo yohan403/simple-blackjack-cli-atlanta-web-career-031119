@@ -29,10 +29,9 @@ end
 
 def initial_round
   # code #initial_round here
-  deal_card
-  deal_card
-  init_cards = card1 + card2
-  display_card_total(init_cards)
+  sum = deal_card
+  sum = sum + deal_card
+  display_card_total(sum)
 end
 
 def hit?
