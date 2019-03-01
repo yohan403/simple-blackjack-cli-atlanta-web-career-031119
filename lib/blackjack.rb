@@ -44,13 +44,14 @@ def hit?(number)
   elsif input == 's'
     number
   else
-    puts "Please enter a valid command"
+    invalid_command
     prompt_user
   end
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
