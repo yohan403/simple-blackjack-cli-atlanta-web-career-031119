@@ -40,7 +40,7 @@ def hit?(number)
   prompt_user
   input = get_user_input
   if input == 'h'
-    new = number + deal_card
+    number = number + deal_card
   elsif input == 's'
     number
   else
@@ -61,7 +61,9 @@ end
 def runner
   # code runner here
   welcome
-  initial_round
-  hit?
+  sum = initial_round
+  until sum > 21
+    hit?(sum)
+  end
 end
     
