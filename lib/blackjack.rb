@@ -19,7 +19,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  input = gets.chomp
+  gets.chomp
 end
 
 def end_game(card_total)
@@ -37,6 +37,10 @@ end
 
 def hit?
   # code hit? here
+  prompt_user
+  input = get_user_input
+  if input ==
+  
 end
 
 def invalid_command
